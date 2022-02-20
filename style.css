@@ -1,8 +1,20 @@
+/*
+Style sheet for my Portfolio
+Kay Piotrowski - started 2-19-22
+colors:
+  background: #212121
+  purple text:#df73ff
+  hints of light green:
+  panda purple:
+  panda green:
+*/
+
+
 body {
-  background-color: #51414F;
+  background-color: #212121;
+  color: #df73ff;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+p {
+  color: #9efd38;
 }
