@@ -2,19 +2,102 @@
 Style sheet for my Portfolio
 Kay Piotrowski - started 2-19-22
 colors:
-  background: #212121
-  purple text:#df73ff
-  hints of light green:
-  panda purple:
-  panda green:
+  background: #252525
+  purple text: #df73ff
+  light green: #9efd38
+  panda purple: #9A01CD
+  panda green: #9ACB34
 */
 
 
 body {
-  background-color: #212121;
+  background-color: #252525;
   color: #df73ff;
+}
+
+header {
+  padding: 2px 0;
+}
+
+.logo {
+  width: auto;
+  height: 150px;
+  display: inline-block;
+}
+
+h1 {
+  color: #9A01CD;
+  display: inline-block;
+}
+
+h2 {
+  color: #9ACB34;
+}
+
+nav {
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
 }
 
 p {
   color: #9efd38;
+  margin: 20px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #282828;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: inherit;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header li a:hover {
+  background-color: #df73ff;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
 }
